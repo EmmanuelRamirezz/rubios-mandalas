@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubio's Mandalas</title>
+  <link rel="stylesheet" href="css/normalize.css"> <!--Normalize se una para que el css puede ser visto bien por 
+    varios navegadores y que sea uniforme-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> <!--Esta es una api de Google fonts para el estilo de letra-->
+
+  <link rel="stylesheet" href="css/style.css">     <!--Este es mi enlace a mi carpeta y archivo css-->
+</head>
+<body>
+  <header class="header"> <!--Ejemplo de la metodologia BEM. Header es el bloque principal-->
+    <a href="index.html ">
+      <img class="header__logo " src="Imagenes/Logo.png" alt="Logotipo"> <!--Hace que el logo sea un boton que lleva a inicio--> <!--img es un elemento que pertenece y depende de header, por eso lleva __ la clase-->
+    </a>
+
+  </header>
+
+  <nav class="navegacion">
+    <a class="navegacion__enlace " href="index.html">Tienda</a> <!--Implementacion del modificador de la metodologia BEM. es un elemento que pertenece al bloque navegacion que tambien es un enlace pero su color es diferente-->
+    <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a> 
+    
+  </nav>
+
+  <main class="contenedor">
+    <h1>Nosotros</h1>
+   
+     <div class="nosotros"> <!--Bloque principal-->
+       <div class="nosotros__contenido"> <!--Elemento-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac purus ut lectus malesuada pulvinar a sit amet enim. Nullam id nulla ac sapien iaculis maximus nec nec lectus. Phasellus vestibulum nisl at justo porta finibus. Praesent et est pulvinar, viverra erat quis, ultrices metus. Curabitur ac justo aliquet, vestibulum risus et, posuere ligula. Pellentesque sed ligula turpis. Duis purus nisl, sodales vel arcu nec, lobortis ornare est.</p> 
+        
+        <p>Donec sagittis tincidunt accumsan. Praesent scelerisque pharetra sagittis. Nam luctus condimentum nunc id cursus. Suspendisse at tempor erat. Nunc tincidunt nunc mattis euismod congue. Duis id lorem maximus, consequat felis et, suscipit tortor. Sed semper eros non finibus tincidunt. Donec sed mauris id ligula placerat tincidunt vitae ut elit. </p>
+
+       </div>
+       <img class="nosotros__imagen" src="Imagenes/Nosotros.jpg" alt="imagen Nosotros">
+       <!--Elemento-->
+
+     </div>
+  
+  </main>
+
+  <section class="contenedor comprar">
+    <h2 class="comprar__titulo">¿Porque comprar con nosotros?</h2>
+    <div class="bloques">
+      <div class="bloque">
+        <img class="bloque__imagenm" src="Imagenes/icono1.png" alt="porque comprar">
+        <h3 class="bloque__titulo">Los mejores diseños</h3 >
+          <p>Phasellus vestibulum nisl at justo porta finibus. Praesent et est pulvinar, viverra erat quis, ultrices metus. Curabitur ac justo aliquet, vestibulum risus et, posuere ligula. Pellentesque sed ligula turpis. </p>
+      </div><!--Bloque-->
+      <div class="bloque">
+        <img class="bloque__imagen" src="Imagenes/icono2.png" alt="porque comprar">
+        <h3 class="bloque__titulo">Los mejores precios</h3 >
+          <p>Phasellus vestibulum nisl at justo porta finibus. Praesent et est pulvinar, viverra erat quis, ultrices metus. Curabitur ac justo aliquet, vestibulum risus et, posuere ligula. Pellentesque sed ligula turpis. </p>
+      </div><!--Bloque-->
+      <div class="bloque">
+        <img class="bloque__imagen" src="Imagenes/icono3.png" alt="porque comprar">
+        <h3 class="bloque__titulo">La mejor calidad</h3 >
+          <p>Phasellus vestibulum nisl at justo porta finibus. Praesent et est pulvinar, viverra erat quis, ultrices metus. Curabitur ac justo aliquet, vestibulum risus et, posuere ligula. Pellentesque sed ligula turpis. </p>
+      </div><!--Bloque-->
+      <div class="bloque">
+        <img class="bloque__imagen" src="Imagenes/icono4.png" alt="porque comprar">
+        <h3 class="bloque__titulo">Envios gratis</h3 >
+          <p>Phasellus vestibulum nisl at justo porta finibus. Praesent et est pulvinar, viverra erat quis, ultrices metus. Curabitur ac justo aliquet, vestibulum risus et, posuere ligula. Pellentesque sed ligula turpis. </p>
+      </div><!--Bloque-->
+
+    </div><!--Bloques-->
+  </section>
+
+  <footer class="footer">
+    <p class="footer__texto"> Rubio's Mandalas-- Todos los derechos reservados 2021.</p>
+  </footer>
+  
+</body>
+</html>
